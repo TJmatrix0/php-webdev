@@ -44,7 +44,9 @@
                 <img height="256px" width="256px" class="mx-auto" src="{{ asset("images/glass-heart.png") }}"></img>
                 <div class="card-body border-top border-white" >
                     <h4>{{ company }}</h4>
-                    <a href="#" class="btn btn-primary stretched-link mb-2">{{ message }}</a>
+                    <a href="{{ path("api_key", {
+                        company
+                    }) }}" class="btn btn-primary stretched-link mb-2">{{ message }}</a>
                     <div class="progress">
                         <div class="progress-bar" style="width:{{ (keyAmount / maxKeys) * 100 }}%">{{ (keyAmount / maxKeys) * 100 }}%</div>
                     </div>

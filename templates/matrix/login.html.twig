@@ -1,5 +1,15 @@
 {% extends "base.html.twig" %}
 
 {% block content %}
-    <h1>{{ title }}</h1>
+    <div class="container">
+        <h1>{{ title }}</h1>
+
+        <form>
+            <div class="form-group">
+                <label for="userNameInput">Username</label>
+                <input type="email" class="form-control" id="userNameInput" placeholder="Enter username">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
 {% endblock %}

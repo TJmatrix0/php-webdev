@@ -26,6 +26,10 @@ class MatrixController extends AbstractController
     public function giveaways(): Response {
         return $this->render("matrix/giveaways.html.twig", [
             "header" => "Giveaways",
+            "company" => "Broken Heart Games",
+            "message" => "Get a Broken Heart Key!",
+            "keyAmount" => 5,
+            "maxKeys" => 10,
         ]);
     }
 

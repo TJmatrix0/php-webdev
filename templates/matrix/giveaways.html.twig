@@ -3,12 +3,14 @@
 {% block content %}
     <div class="container">
         <h1>{{ header }}</h1>
+
+        <!-- Hard-coded Imginary Game Giveaways -->
         <div class="row">
             <div class="col card m-3">
                 <img height="256px" width="256px" class="mx-auto" src="images/gamepad-cross.png"></img>
                 <div class="card-body border-top border-white" >
                     <h4>Blue Button Games</h4>
-                    <p>Claim Key!</p>
+                    <a href="#" class="btn btn-primary stretched-link mb-2">Claim Key!</a>
                     <div class="progress">
                         <div class="progress-bar" style="width:14%"></div>
                     </div>
@@ -28,13 +30,30 @@
                 <img height="256px" width="256px" class="mx-auto" src="images/gamepad.png"></img>
                 <div class="card-body border-top border-white">
                     <h4>Green Gamepad Gaming</h4>
-                    <p>Enter our giveaway!</p>
+                    <a href="#" class="btn btn-primary stretched-link mb-2">Enter our giveaway!</a>
                     <div class="progress">
                         <div class="progress-bar" style="width:80%"></div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Game Giveaway Built using Twig by using Values passed from the controller -->
+        <div class="row">
+            <div class="col card m-3">
+                <img height="256px" width="256px" class="mx-auto" src="{{ asset("images/glass-heart.png") }}"></img>
+                <div class="card-body border-top border-white" >
+                    <h4>{{ company }}</h4>
+                    <a href="#" class="btn btn-primary stretched-link mb-2">{{ message }}</a>
+                    <div class="progress">
+                        <div class="progress-bar" style="width:{{ (keyAmount / maxKeys) * 100 }}%">{{ (keyAmount / maxKeys) * 100 }}%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col m-3">
+            </div>
+            <div class="col m-3">
+            </div>
     </div>
 
 {% endblock %}

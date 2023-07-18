@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html data-bs-theme="dark">
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
@@ -21,13 +21,13 @@
                             <a class="nav-link" href="{{ path("app_homepage") }}"><i class="fa-solid fa-house fa-lg"></i></a>
                         </li>
                         <li class="nav-item me-2">
-                            <a class="nav-link text-white" href="{{ path("app_about")  }}">About</a>
+                            <a class="nav-link" href="{{ path("app_about")  }}">About</a>
                         </li>
                         <li class="nav-item me-2">
-                            <a class="nav-link text-white" href="{{ path("app_giveaways") }}">Giveaways</a>
+                            <a class="nav-link" href="{{ path("app_giveaways") }}">Giveaways</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="{{ path("app_login") }}">Login</a>
+                            <a class="nav-link" href="{{ path("app_login") }}">Login</a>
                         </li>
                     </ul>
                 </div>
@@ -39,11 +39,11 @@
                 <p class="col-md-4 mb-0 text-white">&copy; 2023 Justin Fernandez</p>
 
                 <ul class="nav col-md-4 justify-content-end">
-                    <li class="nav-item"><a href="{{ path("app_homepage") }}" class="nav-link px-2 text-white">Home</a></li>
-                    <li class="nav-item"><a href="{{ path("app_about") }}" class="nav-link px-2 text-white">About</a></li>
-                    <li class="nav-item"><a href="{{ path("app_giveaways") }}" class="nav-link px-2 text-white">Giveaways</a></li>
-                    <li class="nav-item"><a href="{{ path("app_login") }}" class="nav-link px-2 text-white">Login</a></li>
-                    <li class="nav-item"><a href="https://github.com/TJmatrix0/php-webdev" class="nav-link px-2 text-white" target="_blank">Github <i class="fa-brands fa-github"></i></a></li>
+                    <li class="nav-item"><a href="{{ path("app_homepage") }}" class="nav-link px-2">Home</a></li>
+                    <li class="nav-item"><a href="{{ path("app_about") }}" class="nav-link px-2">About</a></li>
+                    <li class="nav-item"><a href="{{ path("app_giveaways") }}" class="nav-link px-2">Giveaways</a></li>
+                    <li class="nav-item"><a href="{{ path("app_login") }}" class="nav-link px-2">Login</a></li>
+                    <li class="nav-item"><a href="https://github.com/TJmatrix0/php-webdev" class="nav-link px-2" target="_blank">Github <i class="fa-brands fa-github"></i></a></li>
                 </ul>
             </footer>
         </div>

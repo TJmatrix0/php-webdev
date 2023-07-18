@@ -9,7 +9,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class KeyController extends AbstractController
 {
-    #[Route("/api/key/{company}", name: "api_key")]
+    #[Route("/api/key/{company}", name: "api_key", methods: ["GET"])]
     public function getKey(string $company = null): Response {
         $keyData= [
             "key" => rand(0, 10000),

@@ -2,5 +2,21 @@
 @import "~@fortawesome/fontawesome-free/css/all.css";
 
 body {
-    background-color: lightgray;
+    background-color: #121212;
+}
+
+i {
+    color: #FFFFFF;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #FFFFFF;
+}
+
+p {
+    color: #FFFFFF;
+}
+
+label {
+    color: #FFFFFF;
 }
